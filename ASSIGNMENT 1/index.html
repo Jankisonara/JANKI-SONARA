@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANKI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightblue;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: purple;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: yellow;
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+            /* background-color: red; */
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 1.5rem;
+            /* margin: 20px 0; */
+
+        }
+
+        .leftsection .buttons {
+            padding: 32px 0;
+        }
+
+        .leftsection .btn {
+            background: rgb(47, 17, 75);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(149, 56, 237);
+        }
+
+        #element {
+            color: rgb(149, 56, 237);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(79, 12, 161);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .textgrey {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+
+        }
+
+        .secondsection .verticle {
+            height: 63px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw;
+
+        }
+
+        .img-top {
+            width: 45px;
+            position: relative;
+            top: -49px;
+            left: -22px;
+        }
+
+        .verticle-title {
+            position: relative;
+            top: 17px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .verticle-desc {
+            position: relative;
+            top: 32px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(23 2 49);
+            /* height: 233px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width:1400px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .verticle-title,
+            .verticle-desc {
+                left: 45px;
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .secondsection .verticle {
+                height: unset;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightsection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .img-top {
+                top: 133px;
+            }
+
+            .secondsection {
+                max-width: 80vw;
+                margin: auto;
+                height: 141vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            body {
+                min-width: fit-content;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Janki's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div> My name is <span class="purple">Janki</span></div>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="txtgrey"> What i have done far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="verticle">
+                    <img class="img-top"
+                        src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png" alt="">
+                    <div class="verticle-title">
+                        HTML Devloper
+                    </div>
+                    <div class="verticle-desc">
+                        HTML developer is a professional web designer who uses HTML to create website layouts based on
+                        templates and wireframes. HTML is a semantic language used to control how information on
+                        websites and in web apps is structured and to determine how users navigate and interact with
+                        them.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top"
+                        src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png" alt="">
+                    <div class="verticle-title">
+                        CSS Devloper
+                    </div>
+                    <div class="verticle-desc">
+                        CSS developers are web professionals whose primary responsibility is to deliver a polished and
+                        styled product to the visitor's browser. Practically every website uses CSS, but CSS is often
+                        not considered an “equal” in the modern web development stack.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top"
+                        src="https://w7.pngwing.com/pngs/724/306/png-transparent-c-logo-c-programming-language-icon-letter-c-blue-logo-computer-program-thumbnail.png"
+                        alt="">
+                    <div class="verticle-title">
+                        C Devloper
+                    </div>
+                    <div class="verticle-desc">
+                        C Developer Job Description June 2023 | Toptal®
+                        C developers are often expected to develop code that specifically integrates into the operating
+                        systems, operating system modules, embedded systems, or low-level libraries for other high-level
+                        languages such as Node
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top"
+                        src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-thumbnail.png"
+                        alt="">
+                    <div class="verticle-title">
+                        C++ Devloper
+                    </div>
+                    <div class="verticle-desc">
+                        C++ developers design and build applications for desktops and mobile devices. They collaborate
+                        with stakeholders on company needs and turn that into applications people can use. They need to
+                        have a very good understanding of the object-oriented programming language and how it can be
+                        used in real-world situations.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img class="img-top"
+                        src="https://w7.pngwing.com/pngs/234/329/png-transparent-python-logo-thumbnail.png" alt="">
+                    <div class="verticle-title">
+                        PYTHON Devloper
+                    </div>
+                    <div class="verticle-desc">
+                        A Python Developer is responsible for coding, designing, deploying, and debugging development
+                        projects, typically on the server-side (or back-end). They may, however, also help organizations
+                        with their technological framework.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Janki's Devloper Portfolio </h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169 wwww.Jankisportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Mern Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
