@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        height: 100px;
+        width: 100px;
+        transition: 3s;
+        color: aqua;
+        background-color: rebeccapurple;
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+
+    #r1:hover {
+        rotate: 60deg;
+
+    }
+
+    @keyframes mymove {
+        0% {
+            transform: rotate(0deg);
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: blue;
+            left: 200px;
+            transform: rotate(90deg);
+            top: 0px;
+
+        }
+
+        50% {
+            background-color: yellow;
+            left: 200px;
+            top: 200px;
+            transform: rotate(180deg);
+        }
+
+        75% {
+            background-color: yellow;
+            left: 0px;
+            top: 200px;
+            transform: rotate(270deg);
+        }
+
+        100% {
+            background-color: purple;
+            left: 0px;
+            top: 0px;
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div id="r1">
+
+    </div>
+
+</body>
+
+</html>

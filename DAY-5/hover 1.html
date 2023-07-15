@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+
+
+            height: 200px;
+            width: 200px;
+            transition: 3s;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            background-color: red;
+        }
+
+        #translateDiv:hover {
+            -webkit-transform: translate(100px, 100px);
+            -noz-transform: translate(100px, 100px);
+            -ns-transform: translate(100px 100px);
+            -o-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+            background-color: blue;
+            color: yellow;
+
+        }
+
+        #rotateDiv:hover {
+            -webkit-transform: rotate(360deg);
+            -noz-transform: rotate(360deg);
+            -ns-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+            background-color: blue;
+        }
+
+        #rotate3DDiv:hover {
+            -webkit-transform: rotate3D(1, 1, 0, 360deg)
+        }
+
+        #skewDiv:hover {
+            -webkit-transform: skew(10deg, 0);
+            color: yellowgreen;
+            background-color: blue;
+
+        }
+
+        #scaleDiv:hover {
+            -webkit-transform: scale(2);
+            color: yellowgreen;
+            background-color: blue;
+        }
+
+        #opasityDiv:hover {
+            -webkit-transform: opasity(0, 5);
+            color: yellowgreen;
+            background-color: blue;
+        }
+
+        #rgbaDiv:hover {
+            color: yellowgreen;
+            background-color: blue;
+        }
+
+        #box-shadow:hover {
+            box-shadow: 5px 10px blue;
+            color: yellowgreen;
+
+        }
+
+        #text-shadowDiv:hover {
+            text-shadow: 3px 3px 3px green;
+        }
+
+        #radius:hover {
+            border-radius: 50%;
+        }
+
+        #overflowDiv:hover {
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="translateDiv">
+        TRANSLATE
+    </div>
+    <hr>
+    <div id="rotateDiv">
+        ROTATE
+    </div>
+    <hr>
+    <div id="rotate3DDiv">Rotate3D</div>
+    <hr>
+    <div id="skewDiv">skew</div>
+    <hr>
+    <div id="scaleDiv">scale</div>
+    <hr>
+    <div id="opasityDiv">opasity</div>
+    <hr>
+    <div id="rgbaDiv">RGBA</div>
+    <hr>
+    <div id="box-shadow">Box-shadow</div>
+    <hr>
+    <div id="text-shadowDiv">text-shadow</div>
+    <hr>
+    <div id="radius">Radius</div>
+    <hr>
+    <div id="overflow">Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+        Overflow
+    </div>
+    <hr>
+</body>
+
+</html>
