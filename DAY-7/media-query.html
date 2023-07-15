@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        #d1{
+            width: 100px; height: 100px; background-color: aqua;
+        }
+        @media(min-width:500px){
+            #d1{
+                width: 80%; height: 80%; background-color: aquamarine;
+            }
+        }
+        @media(min-width:768px){
+            #d1{
+                width: 60%; height: 60%; background-color: green;
+            }
+        }
+        @media(min-width:992px){
+            #d1{
+                width: 40%; height: 40%; background-color:gray;
+            }
+        }
+        @media(min-width:1200px){
+            #d1{
+            width: 20%; height: 20%; background-color: yellow;
+            }
+        }
+        @media(min-width:1400px){
+            #d1{
+                width: 10%; height: 10%; background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" style="text-align: center;  min-width:300px; min-height: 300px;">MEDIA QUERY</div>
+</body>
+</html>

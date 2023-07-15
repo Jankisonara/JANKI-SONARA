@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .input-group input {
+            width: 100%;
+        }
+
+        .container {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #button:hover {
+            opacity: 0.7;
+        }
+
+        #CNAform {
+            margin-top: 50px;
+            padding: 30px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="" id="CNAform">
+                <h3 class="text-center"><i class="fa fa-user-circle" aria-hidden="true">Login</i></h3>
+
+                <div class="form-group"><b>Username</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" id="Txtfirstname" maxlength="10" placeholder="enter your Username" />
+                    </div>
+                    <small id="Txtfirstnamecvalidate" class="text-danger"></small>
+                    </small>
+                    <div class="form-group"><b>Password:</b>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </span>
+                            <input type="password" id="email" maxlength="50" placeholder="enter Password" />
+                        </div>
+                        <small id="Password" class="text-danger"></small>
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <a id="button" class="btn btn-primary">
+                            <i style="color:  aqua;  "></i>
+                            Submit
+                        </a>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"><b style="padding-left:5px ;">Remember Me</b>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>

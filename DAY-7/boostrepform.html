@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+        #CNAform {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            background-color: lightblue;
+            width: 25%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-3" id="CNAform">
+                <h3 class="text-center"><i class="fa fa-user-circle" aria-hidden="true">create new account</i></h3>
+
+                <div class="form-group"><b>First Name:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" id="Txtfirstname" maxlength="10" placeholder="enter your firstname" />
+                    </div>
+                    <small id="Txtfirstnamecvalidate" class="text-danger"></small>
+                    </small>
+                </div>
+                <div class="form-group"><b>Last Name:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" id="Txtlastname" maxlength="10" placeholder="enter your lastname" />
+                    </div>
+                    <small id="Txtlastnamecvalidate" class="text-danger"></small>
+                    </small>
+                </div>
+
+                <div class="form-group"><b>Contact No:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" id="contact" maxlength="10" placeholder="contact" />
+                    </div>
+                    <small id="contact" class="text-danger"></small>
+                    </small>
+                </div>
+
+                <div class="form-group"><b>Gender:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-venus-mars"></i>
+                        </span>
+                        <select id="Gender" name="Gender">
+                            <option value="M">Male</option>
+                            <option value="M">Female</option>
+                        </select>
+                    </div>
+                    <small id="gender" class="text-danger"></small>
+                    </small>
+                </div>
+                <div class="form-group"><b>Email:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" id="email" maxlength="50" placeholder="enter email" />
+                    </div>
+                    <small id="email" class="text-danger"></small>
+                    </small>
+                </div>
+
+                <div class="form-group"><b>Password:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-key" aria-hidden="true"></i>
+                        </span>
+                        <input type="password" id="email" maxlength="50" placeholder="enter Password" />
+                    </div>
+                    <small id="Password" class="text-danger"></small>
+                    </small>
+                </div>
+                <div class="form-group">
+                    <a id="button" class="btn btn-primary">
+                        <i style="color: aqua;"></i>
+                        Submit
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
