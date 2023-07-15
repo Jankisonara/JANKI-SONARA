@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Boxfile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#texttestfocus").focus(function () {
+                $(this).css("background-color", "blue");
+            });
+            $("#texttestblur").blur(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#texttestkeypress").keypress(function () {
+                alert($(this).val());
+            });
+            $("#texttestkeyup").keyup(function () {
+                alert($(this).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="texttestfocus" placeholder="check text focus">
+    <hr>
+    <input type="text" id="texttestblur" placeholder="check text blur">
+    <hr>
+    <input type="text" id="texttestkeypress" placeholder="check text keypress">
+    <hr>
+    <input type="text" id="texttestkeyup" placeholder="check text keyup">
+    <hr>
+</body>
+
+</html>
