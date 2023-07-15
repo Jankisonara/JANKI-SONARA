@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style type="text/css">
+        div {
+            background-color: lightskyblue;
+            height: 200px;
+            color: black;
+            font-size: 20px;
+            width: 200px;
+        }
+
+        .divcls {
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            color: aqua;
+            font-size: 20px;
+        }
+
+        #d1 {
+            background-color: cornflowerblue;
+            height: 200px;
+            width: 200px;
+            counter-reset: yellow;
+            font-size: 20px;
+        }
+    </style>
+    <link type="text/css" href="css/style.CSS" rel="stylesheet" />
+</head>
+
+<body>
+    <div style="background-color:blueviolet; width:200px; height:200px; color:azure; font-size:20px;">Inline css</div>
+    <hr>
+    <div>internal stylesheet-tag name</div>
+    <hr>
+    <div>internal stylesheet-tag name</div>
+    <hr>
+    <div>internal stylesheet-tag name</div>
+    <hr>
+    <div class="divcls">internal stylesheet-classname</div>
+    <hr>
+    <div class="divcls">internal stylesheet-classname</div>
+    <hr>
+    <div style="background-color: blue;" clas="divcls" id="d1">Internal css with class</div>
+</body>
+
+</html>
