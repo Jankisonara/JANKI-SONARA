@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery UI Dialog</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#MyDiv").dialog({
+                autoOpen:true,
+            });
+            $("#MyButton").Click(function(){
+                $("#MyDiv").dialog("Open");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="MyDiv"title="My Div Title...">
+        My Div Description
+        <input type="text"/>
+    </div>
+    <button id="My Button">Click here</button>
+</body>
+</html>
